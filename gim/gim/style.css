@@ -14,6 +14,10 @@ h2 {
     margin-bottom: 30px;
 }
 
+.tm {
+    font-size: 20px;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -177,10 +181,6 @@ section {
     }
 }
 
-@media (min-width: 992px) {
-    ...
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) {
-    ...
-}
+@media (min-width: 1200px) {}
