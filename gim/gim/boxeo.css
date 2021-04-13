@@ -1,30 +1,5 @@
 body {
     font-family: 'Merriweather Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#inicio {
-    transition: all 0.4s linear;
-    border-radius: 5px;
-}
-
-.container {
-    max-width: 1170px;
-    margin: auto;
-}
-
-.home {
-    height: 100vh;
-    background-image: url('img/boxeo.jpg');
-    background-size: cover;
 }
 
 h1 {
@@ -37,17 +12,62 @@ h1 {
 h2 {
     font-size: 48px;
     margin-bottom: 30px;
-    color: #ffffff;
 }
 
-.h2box {
-    font-size: 25px;
-    margin-bottom: 30px;
-    color: #ffffff;
+.area-perfil {
+    padding: 80px 0;
 }
 
-.parrafo {
-    color: #ffffff;
+.carta {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0, 5);
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carta h2 {
+    font-size: 30px;
+}
+
+.img1 img {
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
+.img2 img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 7px solid #fff;
+    margin-top: -80px;
+}
+
+.card:hover .img2 img {
+    border-color: #008b8b;
+    transition: .7s;
+}
+
+.main-text {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.main-text h2 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin: 0 0 20px;
+}
+
+.main-text p {
+    font-size: 16px;
+    padding: 0 35px;
 }
 
 a:hover {
@@ -77,16 +97,6 @@ section {
     display: inline-block;
 }
 
-.btn-blanco {
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #ffffff;
-}
-
-.btn-blanco:hover {
-    color: #000000;
-}
-
 .btn-negro:hover {
     color: #ffffff;
 }
@@ -95,12 +105,6 @@ section {
     background-color: #000000;
     color: #ffffff;
     border: #000000;
-}
-
-.btn-trans {
-    background-color: transparent;
-    color: #ffffff;
-    border: 2px solid #ffffff;
 }
 
 .btn i {
@@ -126,70 +130,33 @@ section {
     text-align: center;
 }
 
-.disciplinas-container {
+.que-container {
     position: relative;
     overflow: hidden;
     margin: 10px 0;
     border-radius: 2px;
 }
 
-.disciplinas-container img {
-    -moz-transition: all 0.8s;
-    -webkit-transition: all 0.8s;
-    transition: all 0.8s;
+.que-container img {
+    max-width: 600px;
+    margin: 0 auto 60px auto;
 }
 
-.disciplinas-container:hover img {
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.disciplinas-details {
-    position: absolute;
-    bottom: 25px;
-    left: 25px;
-    z-index: 200;
-}
-
-.disciplinas-details h2 {
-    margin-bottom: 0px;
-}
-
-.disciplinas-details a h2,
-.disciplinas-details a p {
-    color: rgb(252, 252, 252);
-}
-
-.precios-container {
-    margin: 15px 0;
-}
-
-.planes {
+.marcos {
     padding: 50px 80px;
     border-radius: 2px;
     min-width: 450px;
 }
 
-.plan-blanco {
+.marco-blanco {
     background-color: #ffffff;
-    border: 2px solid #ffffff;
-    color: #000000;
-}
-
-.plan-negro {
-    background-color: #000000;
     border: 2px solid #000000;
-    color: #ffffff;
+    margin-top: 50px;
+    margin-left: 10px;
 }
 
-.planes h2 {
-    font-size: 60px;
-    font-weight: 600;
-}
-
-.planes span {
-    font-size: 20px;
+.qb {
+    margin-top: none;
 }
 
 @media (min-width: 576px) {
@@ -214,10 +181,6 @@ section {
     }
 }
 
-@media (min-width: 992px) {
-    ...
-}
+@media (min-width: 992px) {}
 
-@media (min-width: 1200px) {
-    ...
-}
+@media (min-width: 1200px) {}
