@@ -129,8 +129,7 @@ section {
 }
 
 #hero {
-    background-image: url(img/ufc.jpg);
-    background-image: url(img/boxportada.jpg);
+    background-image: url(img/mmaportada.jpg);
     background-size: cover;
     padding-top: 300px;
     min-height: 700px;

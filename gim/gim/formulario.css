@@ -6,6 +6,9 @@
 
 body {
     background-image: url('img/gim.jpg');
+    background-image: url(img/gymformulario.jpg);
+    background-size: cover;
+    color: rgb(250, 250, 250);
 }
 
 .form-register {
@@ -18,6 +21,10 @@ body {
     font-family: 'calibri';
     color: #ffffff;
     box-shadow: 7px 13px 37px #000;
+}
+
+#titulo-registro {
+    text-align: center;
 }
 
 .form-register h4 {
@@ -34,6 +41,7 @@ body {
     border: 1px solid #4dcafc;
     font-family: 'calibri';
     font-size: 18px;
+    color: #ffffff;
 }
 
 .form-register p {
