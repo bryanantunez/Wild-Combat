@@ -48,6 +48,13 @@ h2 {
     margin-top: -80px;
 }
 
+.img3 img {
+    height: 200px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 100%;
+}
+
 .card:hover .img2 img {
     border-color: #008b8b;
     transition: .7s;
@@ -117,7 +124,7 @@ section {
 }
 
 #hero {
-    background-image: url(img/ufc.jpg);
+    background-image: url(img/boxportada.jpg);
     background-size: cover;
     padding-top: 300px;
     min-height: 700px;
