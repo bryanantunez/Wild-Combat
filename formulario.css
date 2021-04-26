@@ -68,3 +68,28 @@ body {
     margin: 16px 0;
     font-size: 16px;
 }
+
+@media (max-width: 520px) {
+    .container {
+        padding: 40px 20px;
+    }
+    .contenido .info,
+    .contenido .formulario {
+        width: 100%;
+        padding: 0px;
+    }
+    .contenido .info {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    .contenido .info,
+    .contenido .formulario {
+        width: 100%;
+        padding: 0px;
+    }
+    .contenido .info {
+        margin-bottom: 30px;
+    }
+}
