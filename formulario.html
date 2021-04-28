@@ -24,22 +24,18 @@
 <body>
     <section class="form-register" id="formulario">
         <h4 id="titulo-registro">¡COMIENZA TU CAMBIO AHORA!</h4>
-        <label for="nombres">Nombres</label>
+
         <input class="controls" type="text" name="nombres" id="nombre" data-errormessage-value-missing="El campo Nombre es obligatorio" placeholder="Ingrese su Nombre">
 
-        <label for="apellido">Apellido</label>
         <input class="controls" type="text" name="apellido" id="apellido" data-errormessage-value-missing="El campo Apellido es obligatorio" placeholder="Ingrese su Apellido">
 
-        <label for="correo">Correo Electrónico</label>
         <input class="controls" type="text" name="correo" id="correo" data-errormessage-value-missing="El campo Apellido es obligatorio" data-errormessage-value-missing="Formato: usuario@mail.com" placeholder="Ingrese su Correo Electrónico">
 
-        <label for="contraseña">Contraseña</label>
         <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su Contraseña">
 
         <p>Estoy de acuerdo con los <a href="#"><b>"Términos y Condiciones"</b></a></p>
         <button class="botons" type="button" onclick="validarFormulario()">Registrar </button>
         <p class="alertas" id="alertas"></p>
-
         <p><a href="#">¿Ya tengo cuenta?</a></p>
     </section>
 

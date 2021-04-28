@@ -1,13 +1,13 @@
 function validarFormulario() {
     $('.alert').remove();
     var nombre = $('#nombre').val(),
+        apellido = $('#apellido').val(),
         correo = $('#correo').val(),
-        numero = $('#numero').val(),
-        mensaje = $('#mensaje').val();
+        contraseña = $('#contraseña').val();
 
     if (nombre == "" || nombre == null) {
         cambiarColor("nombre");
-        mostrarAlerta("Campo obligatorio");
+        mostrarAlerta("Por favor, ingrese su nombre");
         return false;
 
     } else {
@@ -18,9 +18,24 @@ function validarFormulario() {
             return false;
         }
     }
+
+    if (apellido == "" || apellido == null) {
+        cambiarColor("apellido");
+        mostrarAlerta("Por favor, ingrese su apellido");
+        return false;
+
+    } else {
+        var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+        if (!expresion.test(apellido)) {
+            cambiarColor("apellido")
+            mostrarAlerta("No se permiten caracteres especiales o números")
+            return false;
+        }
+    }
+
     if (correo == "" || correo == null) {
         cambiarColor("correo");
-        mostrarAlerta("Campo obligatorio");
+        mostrarAlerta("Por favor, ingrese su correo electrónico");
         return false;
 
     } else {
@@ -32,109 +47,60 @@ function validarFormulario() {
         }
     }
 
-    if (numero == "" || numero == null) {
-        cambiarColor("numero");
-        mostrarAlerta("Campo obligatorio");
+    if (contraseña == "" || contraseña == null) {
+        cambiarColor("contraseña");
+        mostrarAlerta("Por favor, ingrese su contraseña");
         return false;
-
     } else {
-        var expresion = /^[0-9]+$/;
-        if (!expresion.test(numero)) {
-            cambiarColor("numero")
-            mostrarAlerta("Por favor escriba solamente con números")
+        var expresion = /^[a-zA-ZñÑáéíóúÁÉÍÓÚ ]*$/;
+        if (!expresion.test(contraseña)) {
+            cambiarColor("contraseña")
+            mostrarAlerta("No se permiten caracteres especiales o números")
             return false;
         }
     }
 
-    if (mensaje == "" || mensaje == null) {
-        cambiarColor("mensaje");
-        mostrarAlerta("Campo obligatorio");
-        return false;
+    $("#formulario").validate({
+        rules: {
+            contrasena: { required: true, minlength: 8, maxlength: 15, passwordcheck: true },
+            contrasenaconfirmar: { required: true, equalTo: "#contrasena", passwordcheck: true }
+        },
+        messages: {
+            contrasena: "Formato contraseña incorrecto.",
+            contrasenaconfirmar: "Formato contraseña incorrecto."
+        },
+        errorLabelContainer: "dt",
+        wrapper: "dd"
+    });
 
-    }
 
     $('form').submit();
     return true;
 
-}
+    $('input').focus(function() {
+        $('.alert').remove();
 
-$('input').focus(function() {
-    $('.alert').remove();
-    colorDefault('nombre');
-    colorDefault('correo');
-    colorDefault('numero');
 
-});
-
-$('textarea').focus(function() {
-    $('.alert').remove();
-    colorDefault('mensaje');
-})
-
-function colorDefault(dato) {
-    $('#' + dato).css({
-        border: "1px solid #999"
-    })
-}
-
-function cambiarColor(dato) {
-    $('#' + dato).css({
-        border: "1px solid #dd5144"
     });
+
+    $('textarea').focus(function() {
+        $('.alert').remove();
+        colorDefault('mensaje');
+    })
+
+    function colorDefault(dato) {
+        $('#' + dato).css({
+            border: "1px solid #999"
+        })
+    }
+
+    function cambiarColor(dato) {
+        $('#' + dato).css({
+            border: "1px solid #dd5144"
+        });
+    }
+    /* Este es el mensaje de error que se ve por pantalla*/
+    function mostrarAlerta(texto) {
+        $('#nombre').before('<div class="alert">Error: ' + texto + '</div>')
+    }
 }
-/* Este es el mensaje de error que se ve por pantalla*/
-function mostrarAlerta(texto) {
-    $('#nombre').before('<div class="alert">Error: ' + texto + '</div>')
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*var boton = document.createElement("button");
-boton.type = "button";
-document.body.appendChild(boton);
-
-const nombre = document.getElementById("nombre")
-const apellido = document.getElementById("apellido")
-const correo = document.getElementById("correo")
-const contraseña = document.getElementById("contraseña")
-const section = document.getElementById("formulario")
-const parrafo = document.getElementById("alertas")
-
-section.addEventListener("submit", e => {
-    e.preventDefault()
-    let warnings =""
-    let entrar = false
-    let regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-] + @ [a-zA-Z0-9 -] + (?: \. [ a-zA-Z0-9 -] +) * $ /
-
-    if (nombre.value.length < 3) {
-        warnings +='el nombre no es válido <br>'
-        entrar = true
-    }
-
-    if (apellido.value.length < 3) {
-        warnings +='el apellido no es válido <br>'
-        entrar = true
-    }
-
-    if(!regexEmail.test(email.value))
-    warnings +='el email no es válido <br>'
-
-    if(contraseña.value.length < 8) {
-        warnings +='La contraseña no es válida <br>'
-        entrar = true
-    }
-
-    
-    
-}) */
