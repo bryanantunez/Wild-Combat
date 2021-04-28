@@ -60,18 +60,9 @@ function validarFormulario() {
         }
     }
 
-    $("#formulario").validate({
-        rules: {
-            contrasena: { required: true, minlength: 8, maxlength: 15, passwordcheck: true },
-            contrasenaconfirmar: { required: true, equalTo: "#contrasena", passwordcheck: true }
-        },
-        messages: {
-            contrasena: "Formato contraseña incorrecto.",
-            contrasenaconfirmar: "Formato contraseña incorrecto."
-        },
-        errorLabelContainer: "dt",
-        wrapper: "dd"
-    });
+
+
+
 
 
     $('form').submit();
@@ -104,3 +95,34 @@ function validarFormulario() {
         $('#nombre').before('<div class="alert">Error: ' + texto + '</div>')
     }
 }
+
+
+/*   $("#formulario").validate({
+        rules: {
+            contrasena: { required: true, minlength: 8, maxlength: 15, passwordcheck: true },
+            contrasenaconfirmar: { required: true, equalTo: "#contrasena", passwordcheck: true }
+        },
+        messages: {
+            contrasena: "Formato contraseña incorrecto.",
+            contrasenaconfirmar: "Formato contraseña incorrecto."
+        },
+        errorLabelContainer: "dt",
+        wrapper: "dd"
+    });*/
+
+/*$(function() {
+    var mayus = new RegExp("^(?=.*[A-Z])";
+    var special = new RegExp("#&*(?=.*[!@#&*])";
+    var numbers = new RegExp("^(?=.*[0-9])";
+    var lower = new RegExp("^(?=.*[a-z])";
+    var len = new RegExp("^(?=.{8,})";
+
+    $("#contraseña").on("keyup", function() {
+        var contraseña = $("#contraseña").val();
+        if(mayus.test(contraseña) && special.test(contraseña) && numbers.test(contraseña) && lower.test(contraseña) && len.test(contraseña)) {
+            $("#mensaje").text("Segura");
+        }else{
+            $("#mensaje").text("Segura");
+        }  
+                
+    });*/
