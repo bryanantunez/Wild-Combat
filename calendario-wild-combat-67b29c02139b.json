@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "calendario-wild-combat",
+  "private_key_id": "67b29c02139b4ddcebb6e8125d35d6dde1471756",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQD6aDVOKTV+rmDV\n3IVhs9XaGjbyEc3h5wmhMFYMkUNHihqHP+QLHq7syp5/jC4XxDYyEygrDhPOSgw4\n0TjMJDoz4W0VTh73UjemhEv5HBB6Ij8y0GPNzFL5U5KNHwjwq8D+dqlZOAI4sUlH\nRFn3OVhTmjZHvyhkZT37YStIvINJr3fA0YtJP3zo5UUp3A62DeWz76XPuJYip772\nuTc41VkJY+bx1NmczjxfRjs7MWAbXbZOIPEmssXCndT/zibIl+/o1J0sD4+Mx3GR\nkan9YT0eq/qtyd31qpK3FxApMTlC4q4GOS/ZHmtGyZf8JP9OwjID0vnAy1Fh6eTJ\njy63wGytAgMBAAECggEAATeJbshPfL6fNNreARQNKYKwGqwQepUTXGeuO2BnWc0n\nhNnAI3eyNO9lJsyJGs92zfZ+3vqyCPIeLhaCNqfEaqUhURWwm9YX9CS3c835nIZX\nFUmi+oiQLKsFzs7ETdsf1HzCJO9bP2hJKWIBJ+zs63cX5XBd42MEkpity6wy3SRN\nNC9aOR1y9PtwBxXpljyuvBd8YCE+M3xciwBJ4xbyc2lOidPzZLMOpeaRoKjqgMrL\n/HqleSx8Hw9fqry6SYFVDQZha2QTDSbXAdm0javLcDbPB0giu4lI7dIBNbU152c+\n9DIbDuxDCoqRNhQWlhh+cH2JAOVG6mTKXPo/gGhbcQKBgQD9U/tIY5ivSAL0pQM5\ntrB4cBf/umk1n9Hvnsz/IOZvIQp3bVZRSYkfWnQ3PbDgHWR31/l1/r4SslBFTXP8\n80ONpphM0GCqguKoBl1btT8ic4ePa4EuRk98bW4dPZ6PV2pSF+wR0KSzI/bhF118\naaqjENCa55+k1dRvVY6hgpIdFQKBgQD9DFbwIpl7sw21xmb11PNaJ+9i4CqKH4UC\nF1rTuGsQM0to+qgmi/muiN2lw/9dQ0IpvmL/hTn8+WZLsG1vLApkYgofgxKbtsqJ\nfcV2kczRHeHpx5PTt2Ekq8XcPmzL/QhZKiJQPt/Tn1HonDMVb0aM89VdS+JH8GOe\nobo9G5LnOQKBgHpWMTafKmATdaHxgmI/sG8pKt3Lhv1nhfmjBbp7h+zI1wYfnhy5\nV2f1xcPbnexNJXSerxDliaL7y7n8EnRoggoJFumZg+U0OgMMt88O80NO6XtAXm0b\ndU1Qh2nFlSoB/A1TEiT0TmVYi+Pd5b6sRMRk3WjBTJ5MyT9O4QdsR+WVAoGAI2A4\nPzX3Ew4DGqhz+GYe5zmyA7am+8xQQeyV7AdaIFercS+plkn3S+kiY2w1JQqkE0Xk\nfShY5P7QyEAP7HzRrxrto14lmdNCGVqV4m+bnJh63r3h8rUuRXwmGxY3C4WCR0TW\nqzU/AUzCnKxJj/OQf2APMg3LwpbetmyRpr1WGjECgYEAkqgfuOLD9nGcFKjYMdcr\nDk6AyK5KEDa0+rwI1TiGe1ifGC7Ay+oIAmc2/oWNgrFhdYlrxzmipwV09gO1h9Vw\nWx1rpiBDmVNoXcEGHVGCZsdEUEPjsx6RgUiv7h0wMqlkxGNCzbUmjTGf9/UMQ7eX\nw+SA7bSulfSNaJl6ZLp7Cms=\n-----END PRIVATE KEY-----\n",
+  "client_email": "prueba-calendario-gym@calendario-wild-combat.iam.gserviceaccount.com",
+  "client_id": "102628082241622198427",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/prueba-calendario-gym%40calendario-wild-combat.iam.gserviceaccount.com"
+}
