@@ -1,11 +1,11 @@
 const { google } = require('googleapis');
 require('dotenv').config();
 
-// Provide the required configuration
+// Proporcione la configuración requerida
 const CREDENTIALS = JSON.parse(process.env.CREDENTIALS);
 const calendarId = process.env.CALENDAR_ID;
 
-// Google calendar API settings
+// Configuración de la API del calendario de Google
 const SCOPES = 'https://www.googleapis.com/auth/calendar';
 const calendar = google.calendar({ version: "v3" });
 
@@ -16,10 +16,10 @@ const auth = new google.auth.JWT(
     SCOPES
 );
 
-// Your TIMEOFFSET Offset
+// Tu compensación de TIEMPO LIBRE
 const TIMEOFFSET = '+05:30';
 
-// Get date-time string for calender
+// obtener una cadena de fecha y hora para el calendario
 const dateTimeForCalander = () => {
 
     let date = new Date();
@@ -47,7 +47,7 @@ const dateTimeForCalander = () => {
     let event = new Date(Date.parse(newDateTime));
 
     let startDate = event;
-    // Delay in end time is 1
+    // El retraso en la hora de finalización es 1
     let endDate = new Date(new Date(startDate).setHours(startDate.getHours() + 1));
 
     return {
@@ -56,7 +56,7 @@ const dateTimeForCalander = () => {
     }
 };
 
-// Insert new event to Google Calendar
+// Insertar nuevo evento en Google Calendar
 const insertEvent = async(event) => {
 
     try {
@@ -101,7 +101,7 @@ const insertEvent = async(event) => {
 // console.log(err);
 // });
 
-// Get all the events between two dates
+// Obtén todos los eventos entre dos fechas
 const getEvents = async(dateTimeStart, dateTimeEnd) => {
 
     try {
